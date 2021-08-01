@@ -2,7 +2,7 @@ import React from 'react'
 
 const Hello = () => {
     // return(          This is JSX code
-    //     <div className='dummyClass'>
+    //     <div className='dummyClass>
     //         <h1>Hello Ankit</h1>
     //     </div>
     // )
