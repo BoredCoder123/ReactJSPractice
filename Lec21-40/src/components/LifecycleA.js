@@ -21,11 +21,32 @@ class LifecycleA extends Component {
         console.log('LifecycleA didMount')
     }
 
+    shouldComponentUpdate(){
+        console.log('LifecycleA shouldcomponentupdate')
+        return true
+    }
+
+    getSnapshotBeforeUpdate(prevProps, prevState){
+        console.log('LifecycleA getSnapshotBeforeUpdate')
+        return null
+    }
+
+    componentDidUpdate(){
+        console.log('LifecycleA componentDidUpdate')
+    }
+
+    changeState = () =>{
+        this.setState({
+            name: 'Ankit2'
+        })
+    }
+
     render() {
         console.log('LifecycleA render')
         return (
             <div>
-                LifecycleA
+                <div>LifecycleA</div>
+                <button onClick={this.changeState}>Change state</button>
                 <LifecycleB></LifecycleB>
             </div>
         )
