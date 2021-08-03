@@ -18,7 +18,7 @@ function App() {
 
       {/* <Table></Table> */}
 
-      <ParentComp />
+      <ParentComp></ParentComp>
     </div>
   );
 }
