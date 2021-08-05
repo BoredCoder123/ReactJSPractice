@@ -13,6 +13,8 @@ import Hero from './components/Hero'
 import ErrorBoundary from './components/ErrorBoundary';
 import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
+import ClickCounter2 from './components/ClickCounter2';
+import HoverCounter2 from './components/HoverCounter2';
 
 function App() {
   return (
@@ -43,8 +45,11 @@ function App() {
       <Hero heroName='Joker'></Hero>
       </ErrorBoundary> */}
 
-      <ClickCounter name='Ankit'></ClickCounter>
-      <HoverCounter></HoverCounter>
+      {/* <ClickCounter name='Ankit'></ClickCounter>
+      <HoverCounter></HoverCounter> */}
+
+      <ClickCounter2></ClickCounter2>
+      <HoverCounter2></HoverCounter2>
     </div>
   );
 }
