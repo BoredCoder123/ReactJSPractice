@@ -10,6 +10,7 @@ import HookCounter5 from './Components/HookCounter5';
 import HookMouse from './Components/HookMouse';
 import IntervalHookCounter from './Components/IntervalHookCounter';
 import MouseContainer from './Components/MouseContainer';
+import CounterOne from './Components/CounterOne';
 
 
 export const UserContext = React.createContext()
@@ -36,11 +37,14 @@ function App() {
 
       {/* <DataFetching></DataFetching> */}
 
-      <UserContext.Provider value={'Ankit'}>
+      {/* <UserContext.Provider value={'Ankit'}>
         <ChannelContext.Provider value={'Ankit2'}>
           <ComponentC></ComponentC>
         </ChannelContext.Provider>
-      </UserContext.Provider>
+      </UserContext.Provider> */}
+
+      <CounterOne></CounterOne>
+
     </div>
   );
 }
