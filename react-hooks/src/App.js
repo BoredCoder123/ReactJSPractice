@@ -1,4 +1,5 @@
 import './App.css';
+import DataFetching from './Components/DataFetching';
 import HookCounter from './Components/HookCounter';
 import HookCounter2 from './Components/HookCounter2';
 import HookCounter3 from './Components/HookCounter3';
@@ -25,7 +26,9 @@ function App() {
 
       {/* <MouseContainer></MouseContainer> */}
 
-      <IntervalHookCounter></IntervalHookCounter>
+      {/* <IntervalHookCounter></IntervalHookCounter> */}
+
+      <DataFetching></DataFetching>
     </div>
   );
 }
