@@ -11,6 +11,7 @@ import HookMouse from './Components/HookMouse';
 import IntervalHookCounter from './Components/IntervalHookCounter';
 import MouseContainer from './Components/MouseContainer';
 import CounterOne from './Components/CounterOne';
+import CounterTwo from './Components/CounterTwo';
 
 
 export const UserContext = React.createContext()
@@ -43,7 +44,8 @@ function App() {
         </ChannelContext.Provider>
       </UserContext.Provider> */}
 
-      <CounterOne></CounterOne>
+      {/* <CounterOne></CounterOne> */}
+      <CounterTwo></CounterTwo>
 
     </div>
   );
