@@ -1,4 +1,6 @@
 import './App.css';
+import React from 'react';
+import ComponentC from './Components/ComponentC';
 import DataFetching from './Components/DataFetching';
 import HookCounter from './Components/HookCounter';
 import HookCounter2 from './Components/HookCounter2';
@@ -8,6 +10,10 @@ import HookCounter5 from './Components/HookCounter5';
 import HookMouse from './Components/HookMouse';
 import IntervalHookCounter from './Components/IntervalHookCounter';
 import MouseContainer from './Components/MouseContainer';
+
+
+export const UserContext = React.createContext()
+export const ChannelContext = React.createContext()
 
 function App() {
   return (
@@ -28,7 +34,13 @@ function App() {
 
       {/* <IntervalHookCounter></IntervalHookCounter> */}
 
-      <DataFetching></DataFetching>
+      {/* <DataFetching></DataFetching> */}
+
+      <UserContext.Provider value={'Ankit'}>
+        <ChannelContext.Provider value={'Ankit2'}>
+          <ComponentC></ComponentC>
+        </ChannelContext.Provider>
+      </UserContext.Provider>
     </div>
   );
 }
