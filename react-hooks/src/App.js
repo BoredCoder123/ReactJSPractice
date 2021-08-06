@@ -1,5 +1,5 @@
 import './App.css';
-import React from 'react';
+import React, {useReducer} from 'react';
 import ComponentC from './Components/ComponentC';
 import DataFetching from './Components/DataFetching';
 import HookCounter from './Components/HookCounter';
@@ -13,13 +13,33 @@ import MouseContainer from './Components/MouseContainer';
 import CounterOne from './Components/CounterOne';
 import CounterTwo from './Components/CounterTwo';
 import CounterThree from './Components/CounterThree';
+import ComponentB2 from './Components/ComponentB2';
+import ComponentA2 from './Components/ComponentA2';
+import ComponentF2 from './Components/ComponentF2';
 
 
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
+export const CountContext = React.createContext()
+
+const initialState = 0
+const reducer = (state, action) => {
+    switch(action){
+        case 'increment':
+            return state + 1
+        case 'decrement':
+            return state - 1
+        case 'reset':
+            return initialState
+        default:
+            return state
+    }
+}
 
 function App() {
+  const [count, dispatch] = useReducer(reducer, initialState)
   return (
+    <CountContext.Provider value={{countState:count, countDispatch:dispatch}}>
     <div className="App">
       {/* <HookCounter></HookCounter> */}
 
@@ -48,9 +68,14 @@ function App() {
       {/* <CounterOne></CounterOne> */}
       {/* <CounterTwo></CounterTwo> */}
 
-      <CounterThree></CounterThree>
+      {/* <CounterThree></CounterThree> */}
+      <div>{count}</div>
+      <ComponentA2></ComponentA2>
+      <ComponentB2></ComponentB2>
+      <ComponentF2></ComponentF2>
 
     </div>
+    </CountContext.Provider>
   );
 }
 
