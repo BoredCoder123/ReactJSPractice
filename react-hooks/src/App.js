@@ -20,6 +20,7 @@ import DataFetching1 from './Components/DataFetching1';
 import DataFetching2 from './Components/DataFetching2';
 import ParentComponent from './Components/ParentComponent';
 import CounterUseMemo from './Components/CounterUseMemo';
+import FocusInput from './Components/FocusInput';
 
 
 export const UserContext = React.createContext()
@@ -85,7 +86,9 @@ function App() {
 
       {/* <ParentComponent></ParentComponent> */}
 
-      <CounterUseMemo></CounterUseMemo>
+      {/* <CounterUseMemo></CounterUseMemo> */}
+
+      <FocusInput></FocusInput>
 
     </div>
     </CountContext.Provider>
