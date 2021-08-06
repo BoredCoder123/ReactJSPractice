@@ -27,6 +27,7 @@ import DocTitleOne from './Components/DocTitleOne';
 import DocTitleTwo from './Components/DocTitleTwo';
 import Counter1 from './Components/Counter1';
 import Counter2 from './Components/Counter2';
+import UserForm from './Components/UserForm';
 
 
 export const UserContext = React.createContext()
@@ -102,8 +103,10 @@ function App() {
       {/* <DocTitleOne></DocTitleOne>
       <DocTitleTwo></DocTitleTwo> */}
 
-      <Counter1></Counter1>
-      <Counter2></Counter2>
+      {/* <Counter1></Counter1>
+      <Counter2></Counter2> */}
+
+      <UserForm></UserForm>
 
     </div>
     </CountContext.Provider>
