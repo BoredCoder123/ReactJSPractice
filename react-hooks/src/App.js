@@ -21,6 +21,8 @@ import DataFetching2 from './Components/DataFetching2';
 import ParentComponent from './Components/ParentComponent';
 import CounterUseMemo from './Components/CounterUseMemo';
 import FocusInput from './Components/FocusInput';
+import ClassTimer from './Components/ClassTimer';
+import HookTimer from './Components/HookTimer';
 
 
 export const UserContext = React.createContext()
@@ -88,7 +90,10 @@ function App() {
 
       {/* <CounterUseMemo></CounterUseMemo> */}
 
-      <FocusInput></FocusInput>
+      {/* <FocusInput></FocusInput> */}
+
+      {/* <ClassTimer></ClassTimer> */}
+      <HookTimer></HookTimer>
 
     </div>
     </CountContext.Provider>
