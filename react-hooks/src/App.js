@@ -23,6 +23,8 @@ import CounterUseMemo from './Components/CounterUseMemo';
 import FocusInput from './Components/FocusInput';
 import ClassTimer from './Components/ClassTimer';
 import HookTimer from './Components/HookTimer';
+import DocTitleOne from './Components/DocTitleOne';
+import DocTitleTwo from './Components/DocTitleTwo';
 
 
 export const UserContext = React.createContext()
@@ -93,7 +95,10 @@ function App() {
       {/* <FocusInput></FocusInput> */}
 
       {/* <ClassTimer></ClassTimer> */}
-      <HookTimer></HookTimer>
+      {/* <HookTimer></HookTimer> */}
+
+      <DocTitleOne></DocTitleOne>
+      <DocTitleTwo></DocTitleTwo>
 
     </div>
     </CountContext.Provider>
