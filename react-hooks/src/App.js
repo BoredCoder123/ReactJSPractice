@@ -19,6 +19,7 @@ import ComponentF2 from './Components/ComponentF2';
 import DataFetching1 from './Components/DataFetching1';
 import DataFetching2 from './Components/DataFetching2';
 import ParentComponent from './Components/ParentComponent';
+import CounterUseMemo from './Components/CounterUseMemo';
 
 
 export const UserContext = React.createContext()
@@ -82,7 +83,9 @@ function App() {
 
       {/* <DataFetching2></DataFetching2> */}
 
-      <ParentComponent></ParentComponent>
+      {/* <ParentComponent></ParentComponent> */}
+
+      <CounterUseMemo></CounterUseMemo>
 
     </div>
     </CountContext.Provider>
