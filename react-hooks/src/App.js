@@ -25,6 +25,8 @@ import ClassTimer from './Components/ClassTimer';
 import HookTimer from './Components/HookTimer';
 import DocTitleOne from './Components/DocTitleOne';
 import DocTitleTwo from './Components/DocTitleTwo';
+import Counter1 from './Components/Counter1';
+import Counter2 from './Components/Counter2';
 
 
 export const UserContext = React.createContext()
@@ -97,8 +99,11 @@ function App() {
       {/* <ClassTimer></ClassTimer> */}
       {/* <HookTimer></HookTimer> */}
 
-      <DocTitleOne></DocTitleOne>
-      <DocTitleTwo></DocTitleTwo>
+      {/* <DocTitleOne></DocTitleOne>
+      <DocTitleTwo></DocTitleTwo> */}
+
+      <Counter1></Counter1>
+      <Counter2></Counter2>
 
     </div>
     </CountContext.Provider>
