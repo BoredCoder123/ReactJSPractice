@@ -3,6 +3,8 @@ import '../../App.css'
 
 export default function Products() {
     return (
-        <h1 className='products'>PRODUCTS</h1>
+        <div className='fullPage' style={{backgroundImage:"url(/images/img-1.jpg)"}}>
+            <h1 className='products'>PRODUCTS</h1>
+        </div>
     )
 }
